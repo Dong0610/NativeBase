@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainView"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:gravity="center"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <com.dong.nativeapp.widget.UiLinearLayout
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:gravity="center"
+        app:cornerRadius="@dimen/_13sdp"
+        app:stColorDark="#FFFFFF"
+        app:stColorLight="#F40000"
+        app:strokeGdOrientation="bottom_top"
+        app:strokeGradient="#333333 #FFFFFF"
+        app:strokeWidth="3dp">
+
+        <com.dong.nativeapp.widget.UiTextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+
+            app:bgColorLight="#FF9800"
+            app:bgGdOrientation="bottom_top"
+            app:bgGradientStart="#E91E63"
+            app:bgGradientEnd="#ffffff"
+            app:cornerRadius="16dp"
+            app:stColorDark="#FFFFFF"
+            app:stColorLight="#F40000"
+            app:strokeWidth="5dp"
+            app:textGradient="true"
+            app:textGradientStart="@color/white"
+            app:textGradientEnd="@color/black"
+            app:strokeGdOrientation="bottom_top"
+            app:strokeGradient="#333333 #FFFFFF"
+            app:textGdOrientation="left_right"
+            android:text="@string/app_name"
+            android:padding="@dimen/_12sdp"
+            android:layout_height="wrap_content"/>
+        <com.dong.nativeapp.widget.RoundImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:adjustViewBounds="false"
+            app:bgColorDark="#8BC34A"
+            app:bgGdOrientation="bottom_top"
+            app:bgGradientStart="#E91E63"
+            app:bgGradientEnd="#ffffff"
+            app:bgColorLight="#FF9800"
+            app:cornerRadius="16dp"
+            app:strokeWidth="5dp"
+            android:padding="@dimen/_4sdp"
+            app:ri_src="@drawable/img_logo_app"
+            app:stColorDark="#FFFFFF"
+            app:stColorLight="#F40000"
+            app:textGdOrientation="top_bottom" />
+
+    </com.dong.nativeapp.widget.UiLinearLayout>
+
+
+</RelativeLayout>
